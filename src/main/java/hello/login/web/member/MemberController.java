@@ -1,5 +1,7 @@
-package hello.login.domain.member;
+package hello.login.web.member;
 
+import hello.login.domain.member.Member;
+import hello.login.domain.member.MemberRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -11,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("members")
+@RequestMapping("/members")
 public class MemberController {
 
     private final MemberRepository memberRepository;
